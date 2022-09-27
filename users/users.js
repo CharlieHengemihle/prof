@@ -1,7 +1,7 @@
 // this will: check we have a user, set signout link, fetch user profile
 import '../auth/user.js';
 // > Part D import getUser and getProfiles from fetch-utils
-import { getUser, getProfiles} from '../fetch-utils.js';
+import { getUser, getProfiles } from '../fetch-utils.js';
 import { renderProfile } from '../render-utils.js';
 
 const profileList = document.getElementById('profile-list');

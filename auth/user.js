@@ -24,11 +24,6 @@ window.addEventListener('load', async () => {
     const response = await getProfile(user.id);
     error = response.error;
     profile = response.data;
-
-    if (error) {
-        console.log(error);
-        return;
-    }
 });
 
 

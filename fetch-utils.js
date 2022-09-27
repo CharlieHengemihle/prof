@@ -44,7 +44,7 @@ export async function getProfile(id) {
 }
 
 export async function getProfiles() {
-    return await client.from('profiles').select().limit(100)
+    return await client.from('profiles').select().limit(100);
     // > Part D: get all profiles (limit 100)
 }
 
