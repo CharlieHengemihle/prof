@@ -1,7 +1,6 @@
 export function renderProfile(profile, userId) {
     const li = document.createElement('li');
     li.classList.add('profile');
-    console.log(profile);
     if (userId === profile.id) {
         li.classList.add('self');
     }

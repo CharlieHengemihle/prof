@@ -50,7 +50,7 @@ profileForm.addEventListener('submit', async (e) => {
 
     const profileUpdate = {
         user_name: formData.get('user_name'),
-        bio:formData.get('bio'),
+        bio: formData.get('bio'),
     };
     // > Part A
     //      - create a profile update object
