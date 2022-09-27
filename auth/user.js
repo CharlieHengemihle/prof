@@ -13,17 +13,23 @@ if (!user) {
     location.replace(`${base}auth/?redirectUrl=${encodeURIComponent(location)}`);
 }
 
-let error = null;
-let profile = null;
+// let error = null;
+// let profile = null;
 
 
 
 signOutLink.addEventListener('click', signOutUser);
 
-window.addEventListener('load', async () => {
-    const response = await getProfile(user.id);
-    error = response.error;
-    profile = response.data;
-});
+// window.addEventListener('load', async () => {
+//     const response = await getProfile(user.id);
+//     error = response.error;
+//     profile = response.data;
+
+//     if (error) {
+//         // eslint-disable-next-line no-console
+//         console.log(error);
+//         return;
+//     }
+// });
 
 
