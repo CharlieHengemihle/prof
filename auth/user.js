@@ -1,4 +1,5 @@
 import { getUser, signOutUser } from '../fetch-utils.js';
+import { renderProfile } from '../render-utils.js';
 
 const signOutLink = document.getElementById('sign-out-link');
 
@@ -11,5 +12,7 @@ if (!user) {
             : '../';
     location.replace(`${base}auth/?redirectUrl=${encodeURIComponent(location)}`);
 }
+
+renderProfile();
 
 signOutLink.addEventListener('click', signOutUser);
