@@ -1,4 +1,5 @@
 import { getUser, signOutUser } from '../fetch-utils.js';
+// import { renderProfile } from '../render-utils.js';
 
 const signOutLink = document.getElementById('sign-out-link');
 
@@ -12,4 +13,23 @@ if (!user) {
     location.replace(`${base}auth/?redirectUrl=${encodeURIComponent(location)}`);
 }
 
+// let error = null;
+// let profile = null;
+
+
+
 signOutLink.addEventListener('click', signOutUser);
+
+// window.addEventListener('load', async () => {
+//     const response = await getProfile(user.id);
+//     error = response.error;
+//     profile = response.data;
+
+//     if (error) {
+//         // eslint-disable-next-line no-console
+//         console.log(error);
+//         return;
+//     }
+// });
+
+
