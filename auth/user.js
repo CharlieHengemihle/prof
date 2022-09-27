@@ -1,4 +1,4 @@
-import { getProfile, getUser, signOutUser } from '../fetch-utils.js';
+import { getUser, signOutUser } from '../fetch-utils.js';
 // import { renderProfile } from '../render-utils.js';
 
 const signOutLink = document.getElementById('sign-out-link');
